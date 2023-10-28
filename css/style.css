@@ -369,6 +369,54 @@ body {
   z-index: 0;
   width: 90%;
 }
+.trademark-cards {
+  display: flex;
+}
+.trademark-card {
+  flex-basis: 50%;
+  text-decoration: none;
+  border: 1px solid #EBEBF0;
+  transition: border 0.2s;
+  padding: 3.125rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas: 
+  'logo title title'
+  'logo text text';
+}
+.trademark-card-logo {
+  fill: #828A99;
+  grid-area: logo;
+  width: 100%;
+}
+.trademark-card-title {
+  font-weight: 400;
+  margin: 0;
+  grid-area: title;
+  color: #292D33;
+  font-size: 1.75rem;
+  line-height: 160%;
+}
+.trademark-card-text {
+  font-weight: 400;
+  grid-area: text;
+  color: #828A99;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-top: 10px;
+}
+.trademark-card:hover {
+  border-color: #5c8ee5;
+}
+.trademark-card:hover .trademark-card-logo {
+  fill: #5c8ee5;
+}
+.trademark-card:hover .trademark-card-title {
+  color: #5c8ee5;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: .875rem;
@@ -425,6 +473,10 @@ body {
   .card {
     flex-basis: 50%;
   }
+  .trademark-card {
+    grid-template-columns: auto auto;
+  }
+  
 }
 @media (max-width: 992px) {
   html {
@@ -559,6 +611,9 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-17.5px);
   }
+  .trademark-cards {
+    flex-direction: column;
+  }
 }
 @media (max-width: 770px) {
   .container {
@@ -648,4 +703,34 @@ body {
   .steps-text {
     font-size: 14px;
   }
+  .trademark-card {
+    width: 345px;
+    height: 268px;
+    padding: 29px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 2fr;
+    grid-column-gap: 30px;
+    grid-template-areas: 
+    'logo title'
+    'text text';
+  }
+  .trademark-card-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .trademark-card-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .trademark-card-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
 }
