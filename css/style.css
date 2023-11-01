@@ -232,14 +232,13 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-.steps-slider-buttons {
+.steps-buttons {
   display: none;
   height: 40px;
   justify-content: end;
-
 }
-.steps-slider-button-prev, 
-.steps-slider-button-next {
+.steps-button-prev, 
+.steps-button-next {
   width: 60px;
   height: 40px;
   display: flex;
@@ -541,7 +540,7 @@ body {
   .slider-buttons {
     display: flex;
   }
-  .steps-slider-buttons {
+  .steps-buttons {
     display: flex;
   }
   .card {

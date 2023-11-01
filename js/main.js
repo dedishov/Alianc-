@@ -37,7 +37,7 @@ mMenuToggle.addEventListener('click', (event) => {
   menu.classList.contains('is-open') ? closeMenu() : openMenu();
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.header-features-swiper', {
   speed: 400,
   slidesPerView: 1,
   navigation: {
@@ -71,8 +71,8 @@ const stepsSwiper = new Swiper('.steps-swiper', {
   autoHeight: true,
   slidesPerView: 1,
   navigation: {
-    nextEl: '.steps-slider-button-next',
-    prevEl: '.steps-slider-button-prev',
+    nextEl: '.steps-button-next',
+    prevEl: '.steps-button-prev',
   },
   breakpoints: {
     // when window width is >= 570px
