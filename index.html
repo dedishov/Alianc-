@@ -125,9 +125,9 @@
       <svg class="phone-icon" width="24" height="24">
         <use href="img/sprite.svg#phone"></use>
       </svg>
-        <a href="tel:+74996861014" class="header-phone-link">
+      <a href="tel:+74996861014" class="header-phone-link">
           +7 (499) 686-10-14
-        </a>
+      </a>
     </div>
     <!-- /.header-phone -->
     <button class="navbar-button button">
@@ -218,7 +218,8 @@
     </div>
     <!-- /.container -->
   </header>
-  <section class="section section-light">
+
+  <section class="section scheme">
     <div class="container">
       <div class="separator"></div>
       <h2 class="section-title">схема работы</h2>
@@ -251,24 +252,25 @@
         </ul>
 
         <!-- Steps/ Кнопки навигации вперед/назад-->
-        <div class="steps-buttons">
-          <div class="steps-button-prev">
+        <div class="steps-buttons primary-buttons-wrapper">
+          <div class="steps-button-prev primary-button-prev">
             <svg width="30" height="20">
               <use href="img/sprite.svg#steps-arrow-prev"></use>
             </svg>
           </div>
-          <div class="steps-button-next">
+          <div class="steps-button-next primary-button-next">
             <svg width="30" height="20">
               <use href="img/sprite.svg#steps-arrow-next"></use>
             </svg>
           </div>
         </div>
-        <!-- /.steps-slider-buttons -->
+        <!-- /.steps-buttons -->
       </div>
     </div>
     <!-- /.container -->
   </section>
-  <!-- /.section section-light -->
+  <!-- /.section scheme -->
+
   <section class="section production">
     <div class="container">
       <div class="separator"></div>
@@ -460,19 +462,53 @@
       <h2 class="section-title">Блог экспертов в области производства</h2>
 
       <!-- Slider main container -->
-      <div class="swiper">
+      <div class="swiper blog-swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-
+          <a href="#" class="swiper-slide blog-card">
+            <img src="img/blog/blog-laboratory.png" alt="" class="blog-card-image">
+            <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
+            <p class="blog-card-text">
+              Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...
+            </p>
+          </a>
+          <a href="#" class="swiper-slide blog-card">
+            <img src="img/blog//blog-stairs.png" alt="" class="blog-card-image">
+            <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
+            <p class="blog-card-text">
+              Сложно сказать, почему элементы политического процесса функционально разнесены на независимые элементы. Безусловно, высокотехнологичная...
+            </p>
+          </a>
+          <a href="#" class="swiper-slide blog-card">
+            <img src="img/blog/blog-laboratory.png" alt="" class="blog-card-image">
+            <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
+            <p class="blog-card-text">
+              Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...
+            </p>
+          </a>
         </div>
+        <!-- /.blog-swiper -->
       
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
+        <div class="blog-swiper-footer">
+          <a href="#" class="button-link">Весь блог</a>
+          <div class="blog-buttons primary-buttons-wrapper">
+            <div class="blog-button-prev primary-button-prev">
+              <svg width="30" height="20">
+                <use href="img/sprite.svg#arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="blog-button-next primary-button-next">
+              <svg width="30" height="20">
+                <use href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- /.blog-buttons -->
+        </div>
+        <!-- /.blog-swiper-footer -->
+        
+
       </div>
 
     </div>
